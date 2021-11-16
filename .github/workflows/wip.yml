@@ -10,3 +10,5 @@ jobs:
       - uses: wip/action@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          description: 'work in progress (Do not merge)'
