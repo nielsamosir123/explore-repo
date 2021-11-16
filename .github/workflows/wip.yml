@@ -8,8 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: wip/action@v1
-        with:
-          # Set action to failed when wip.
-          setFailed: false
-          wip_description: 'work in progress (please do not merge)'
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
